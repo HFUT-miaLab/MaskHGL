@@ -1,0 +1,25 @@
+DATA:
+  FEATURE_ROOT: './data/TCGA-EGFR/features'
+  GRAPHS_ROOT: './graphs/TCGA-EGFR/'
+  TRAIN_VALID_CSV: './data/TCGA-EGFR/TCGA-EGFR_trainval_5fold.csv'
+  TEST_CSV: './data/TCGA-EGFR/TCGA-EGFR_test.csv'
+
+MODEL:
+  ARCH: 'HyperGTv5.2wMHRCv3'
+  FEATURE_DIM: 384
+  NUM_CLASS: 2
+  TRANS_DIM: 512
+  MASK_RATIO: 0.9
+  MASK_P: 0.75
+  DROPOUT: 0.
+  LOSS_WEIGHTS: [1, 16, 1]
+
+TRAIN:
+  BATCH_SIZE: 1
+  WORKERS: 12
+  LR: 0.0002
+  WEIGHT_DECAY: 0.00001
+  MAX_EPOCH: 1
+  SHOW_INTERVAL: 50
+  EVAL: ['acc', 'auc']
+  WEIGHTS_SAVE_PATH: './save'
