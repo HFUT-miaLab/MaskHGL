@@ -1,4 +1,4 @@
-data/features/
-graphs/
-save/
+data//features/*
+graphs/*
+save/*
 Global_Cluster_*.pkl
