@@ -1,4 +1,4 @@
-This repository provides the Pytorch implementations for "HyperGraph Learning Network for Weakly Supervised Histopathology Whole Slide Image Classification"
+This repository provides the Pytorch implementations for "Mask-Reconstruction-Guided Hypergraph Learning for Weakly Supervised Histopathology Whole Slide Image Classification"
 
 # Download the WSIs
 
