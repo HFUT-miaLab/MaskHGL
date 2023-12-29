@@ -29,7 +29,7 @@ After that, run the following command for graph construction. This step may take
 python graph_construction.py --K <global cluster number> --features_root <the root path for store features> --coordinates_root <the root path for store features> --global_clusterer_path <path to previous global clusterer> --K <global cluster number> --h <distance threshold for Spatial Hypergraph construction> --save_path <path to save graphs> --num_worker <num_worker>
 ```
 
-# Training HyperGLN Model
+# Training MaskHGL Model
 
 The configurations yaml files for each benchmarking dataset is provided in ./configs. You may first modify the respective config files for hyper-parameter settings, and run the following command for training.
 
